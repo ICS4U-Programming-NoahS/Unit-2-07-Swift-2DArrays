@@ -71,7 +71,7 @@ for assignment in arrayAssignments {
 }
 
 // Write the header row to the CSV file
-fileHandle.write("\(header)\n".data(using: .utf8)!)
+fileHandle.write(Data("\(header)\n".utf8))
 
 // Write the marks for each student to the CSV file
 for studentIndex in 0..<arrayStudents.count {
@@ -84,7 +84,7 @@ for studentIndex in 0..<arrayStudents.count {
     }
 
     // Write the completed line for the student to the file
-    fileHandle.write("\(line)\n".data(using: .utf8)!)
+    fileHandle.write(Data("\(line)\n".utf8))
 }
 
 // Close the file writer to ensure all data is saved
