@@ -1,3 +1,19 @@
+//
+// ClassMarks.swift
+//
+// Created by Noah Smith
+// Created on 2025-04-01
+// Version 1.0
+// Copyright (c) 2025 Noah Smith. All rights reserved.
+//
+// The ClassMarks program reads students.txt and assignments.txt.
+// It saves the data from each of the files into 2 separate arrays of strings.
+// It calls the function GenerateMarks that will take 2 the arrays as arguments.
+// It outputs the results to a CSV file called marks.csv
+// The function called generateMarks will randomly generate all the marks.
+// The mean is 75 and the standard deviation is 10.
+
+// Import foundation library
 import Foundation
 
 // Declare constants for the maximum and minimum possible marks
